@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230407 19:33:31.643" rpa="false" schemaversion="3">
+<suite id="s1" name="Dropdowns" source="C:\Users\Emre\Documents\GitHub\robotframework-practice\robotframework-basic\TestCases\Dropdowns.robot">
+<test id="s1-t1" name="Handling Dropdowns and List" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230407 19:33:31.938" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
+<status status="PASS" starttime="20230407 19:33:31.938" endtime="20230407 19:33:36.916"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230407 19:33:36.916" endtime="20230407 19:33:37.042"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230407 19:33:37.043" level="INFO">Selecting options from selection list 'continents' by index 3.</msg>
+<status status="PASS" starttime="20230407 19:33:37.042" endtime="20230407 19:33:37.206"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230407 19:33:40.208" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230407 19:33:37.206" endtime="20230407 19:33:40.208"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>continents</arg>
+<arg>Europe</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230407 19:33:40.211" level="INFO">Selecting options from selection list 'continents' by label Europe.</msg>
+<status status="PASS" starttime="20230407 19:33:40.211" endtime="20230407 19:33:42.115"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230407 19:33:43.117" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230407 19:33:42.115" endtime="20230407 19:33:43.117"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Browser Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230407 19:33:43.118" level="INFO">Selecting options from selection list 'selenium_commands' by label Browser Commands.</msg>
+<status status="PASS" starttime="20230407 19:33:43.117" endtime="20230407 19:33:43.198"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>WebElement Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230407 19:33:43.200" level="INFO">Selecting options from selection list 'selenium_commands' by label WebElement Commands.</msg>
+<status status="PASS" starttime="20230407 19:33:43.199" endtime="20230407 19:33:43.276"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230407 19:33:46.278" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230407 19:33:43.277" endtime="20230407 19:33:46.278"/>
+</kw>
+<kw name="Unselect From List By Label" library="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>WebElement Commands</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20230407 19:33:46.279" level="INFO">Un-selecting options from selection list 'selenium_commands' by label WebElement Commands.</msg>
+<status status="PASS" starttime="20230407 19:33:46.278" endtime="20230407 19:33:46.356"/>
+</kw>
+<status status="PASS" starttime="20230407 19:33:31.937" endtime="20230407 19:33:46.357"/>
+</test>
+<status status="PASS" starttime="20230407 19:33:31.645" endtime="20230407 19:33:46.358"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dropdowns">Dropdowns</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

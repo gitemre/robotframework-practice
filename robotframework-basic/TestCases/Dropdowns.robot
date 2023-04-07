@@ -14,7 +14,6 @@ Handling Dropdowns and List
     Sleep    3
     Select From List By Label   continents     Europe
     Sleep    1
-
     Select From List By Label    selenium_commands  Browser Commands
     Select From List By Label    selenium_commands  WebElement Commands
     Sleep    3
