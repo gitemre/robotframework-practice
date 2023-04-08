@@ -1,83 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230407 19:33:31.643" rpa="false" schemaversion="3">
-<suite id="s1" name="Dropdowns" source="C:\Users\Emre\Documents\GitHub\robotframework-practice\robotframework-basic\TestCases\Dropdowns.robot">
-<test id="s1-t1" name="Handling Dropdowns and List" line="9">
+<robot generator="Robot 5.0.1 (Python 3.11.2 on win32)" generated="20230408 17:29:21.171" rpa="false" schemaversion="3">
+<suite id="s1" name="ImplicitWaitTests" source="C:\Users\Emre\Documents\GitHub\robotframework-practice\robotframework-basic\TestCases\ImplicitWaitTests.robot">
+<test id="s1-t1" name="RegisterTest" line="7">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>https://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230407 19:33:31.938" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
-<status status="PASS" starttime="20230407 19:33:31.938" endtime="20230407 19:33:36.916"/>
+<msg timestamp="20230408 17:29:21.656" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20230408 17:29:21.655" endtime="20230408 17:29:25.749"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230407 19:33:36.916" endtime="20230407 19:33:37.042"/>
+<status status="PASS" starttime="20230408 17:29:25.749" endtime="20230408 17:29:25.880"/>
 </kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>continents</arg>
-<arg>3</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20230407 19:33:37.043" level="INFO">Selecting options from selection list 'continents' by index 3.</msg>
-<status status="PASS" starttime="20230407 19:33:37.042" endtime="20230407 19:33:37.206"/>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${implicttime}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20230408 17:29:25.881" level="INFO">${implicttime} = 0 seconds</msg>
+<status status="PASS" starttime="20230408 17:29:25.880" endtime="20230408 17:29:25.881"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230407 19:33:40.208" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230407 19:33:37.206" endtime="20230407 19:33:40.208"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${implicttime}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230408 17:29:25.881" endtime="20230408 17:29:25.881"/>
 </kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>continents</arg>
-<arg>Europe</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230407 19:33:40.211" level="INFO">Selecting options from selection list 'continents' by label Europe.</msg>
-<status status="PASS" starttime="20230407 19:33:40.211" endtime="20230407 19:33:42.115"/>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230408 17:29:25.882" endtime="20230408 17:29:25.884"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230407 19:33:43.117" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20230407 19:33:42.115" endtime="20230407 19:33:43.117"/>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<var>${implicttime}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<msg timestamp="20230408 17:29:25.885" level="INFO">${implicttime} = 10 seconds</msg>
+<status status="PASS" starttime="20230408 17:29:25.884" endtime="20230408 17:29:25.885"/>
 </kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>selenium_commands</arg>
-<arg>Browser Commands</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230407 19:33:43.118" level="INFO">Selecting options from selection list 'selenium_commands' by label Browser Commands.</msg>
-<status status="PASS" starttime="20230407 19:33:43.117" endtime="20230407 19:33:43.198"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${implicttime}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230408 17:29:25.885" endtime="20230408 17:29:25.885"/>
 </kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>selenium_commands</arg>
-<arg>WebElement Commands</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230407 19:33:43.200" level="INFO">Selecting options from selection list 'selenium_commands' by label WebElement Commands.</msg>
-<status status="PASS" starttime="20230407 19:33:43.199" endtime="20230407 19:33:43.276"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230408 17:29:25.886" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20230408 17:29:25.886" endtime="20230408 17:29:25.957"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230407 19:33:46.278" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230407 19:33:43.277" endtime="20230407 19:33:46.278"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:FirstName1</arg>
+<arg>Emre</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230408 17:29:25.957" level="INFO">Typing text 'Emre' into text field 'name:FirstName1'.</msg>
+<msg timestamp="20230408 17:29:36.168" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230408 17:29:36.169" level="FAIL">Element with locator 'name:FirstName1' not found.</msg>
+<status status="FAIL" starttime="20230408 17:29:25.957" endtime="20230408 17:29:36.171"/>
 </kw>
-<kw name="Unselect From List By Label" library="SeleniumLibrary">
-<arg>selenium_commands</arg>
-<arg>WebElement Commands</arg>
-<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20230407 19:33:46.279" level="INFO">Un-selecting options from selection list 'selenium_commands' by label WebElement Commands.</msg>
-<status status="PASS" starttime="20230407 19:33:46.278" endtime="20230407 19:33:46.356"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:LastName</arg>
+<arg>Ozturk</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230408 17:29:36.172" endtime="20230408 17:29:36.172"/>
 </kw>
-<status status="PASS" starttime="20230407 19:33:31.937" endtime="20230407 19:33:46.357"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name: Email</arg>
+<arg>emreoz-turk@outlook.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230408 17:29:36.172" endtime="20230408 17:29:36.173"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230408 17:29:36.173" endtime="20230408 17:29:36.173"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:ConfirmPassword</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230408 17:29:36.173" endtime="20230408 17:29:36.173"/>
+</kw>
+<status status="FAIL" starttime="20230408 17:29:21.654" endtime="20230408 17:29:36.174">Element with locator 'name:FirstName1' not found.</status>
 </test>
-<status status="PASS" starttime="20230407 19:33:31.645" endtime="20230407 19:33:46.358"/>
+<status status="FAIL" starttime="20230408 17:29:21.173" endtime="20230408 17:29:36.176"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Dropdowns">Dropdowns</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="ImplicitWaitTests">ImplicitWaitTests</stat>
 </suite>
 </statistics>
 <errors>
